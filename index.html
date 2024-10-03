@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form action="#">
+    
+        <p>
+            <label for="namn">Name</label>
+            <input id="namn" type="text" placeholder="Name" minlength="2" required>
+            <span class="error">Name must be at least 2 characters.</span>
+        </p>
+
+        
+        <p>
+            <label for="ålder">Age</label>
+            <input id="ålder" type="number" placeholder="Age" min="15" required>
+            <span class="error">You must be at least 15 years old.</span>
+        </p>
+
+        
+        <p>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Email" required>
+            <span class="error">Please enter a valid email address.</span>
+        </p>
+
+        
+        <div>
+            <label for="mat">Food preference</label>
+            <select name="mat" id="mat" required>
+                <option value="">Select food</option>
+                <option value="Kött">Meat</option>
+                <option value="Fisk">Fish</option>
+                <option value="Vegetarisk">Vegetarian</option>
+            </select>
+            <span class="error">Please select a food preference.</span>
+        </div>
+        
+        
+        <p>
+            <label for="Allergi">Allergies</label>
+            <textarea id="Allergi" placeholder="Any allergies?" rows="3"></textarea>
+        </p>
+
+        
+        <div class="checkmark">
+            <label for="fredagen">Friday</label>
+            <input type="checkbox" id="fredagen">
+        </div>
+
+        <div class="checkmark">
+            <label for="lördagen">Saturday</label>
+            <input type="checkbox" id="lördagen">
+        </div>
+
+        <div class="checkmark">
+            <label for="söndagen">Sunday</label>
+            <input type="checkbox" id="söndagen">
+        </div>
+
+        
+        <p>
+            <button type="submit">Submit info</button>
+        </p>
+        
+    </form>
+
+</body>
+</html>
